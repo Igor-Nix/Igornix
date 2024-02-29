@@ -1,0 +1,62 @@
+.navbar {
+  background-color: var(--primary);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+    &.active {
+      background-color: var(--secondary);
+      border-radius: 50%;
+    }
+  }
+}
+
+.homePage {
+  .headSection {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+  }
+  .text {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text {
+    }
+  }
+}

@@ -1,6 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --primary: #393e46;
   --secondary: #222831;
   --sky: #00adb5;
   --white: #eeeeee;
+}
+
+html {
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: var(--secondary);
+  color: white;
+  margin: 2rem;
+  padding: 0 20rem;
+}
+
+.appContainer {
+  min-height: 90vh;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: var(--sky);
 }
