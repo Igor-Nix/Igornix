@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Row, Col } from "react-bootstrap"
-import pfp from "../public/assets/pfp.png"
+import { Row } from "react-bootstrap"
+import pfp from "../public/assets/pfp.jpg"
 import Link from "next/link"
 import ProjectContainer from "@/src/components/ProjectContainer/ProjectContainer"
 
@@ -9,7 +9,7 @@ export default function Home() {
     <div className="homePage">
       <Row className="headSection">
         <div className="image">
-          <Image width={170} height={180} src={pfp} alt="Igor Nix" />
+          <Image width={509 / 2} height={510 / 2} src={pfp} alt="Igor Nix" />
         </div>
       </Row>
       <Row className="text">

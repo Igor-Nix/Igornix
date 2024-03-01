@@ -5,9 +5,12 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 10%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
+  border: 1px solid var(--sky);
+  color: white;
+
   .nav {
     display: flex;
     justify-content: center;
@@ -28,7 +31,7 @@
 
 .homePage {
   .headSection {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,11 +42,14 @@
     }
 
     img {
-      border: 1px solid white;
+      border: 1px solid var(--sky);
       border-radius: 50%;
     }
   }
   .text {
+    h1 {
+      color: white;
+    }
     text-align: center;
     font-size: 1rem;
   }
@@ -56,7 +62,69 @@
       justify-content: center;
       align-items: center;
     }
-    .text {
+  }
+}
+
+.projectContainer {
+  margin-top: 2rem;
+  border: 1px solid var(--sky);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  .projectCard {
+    max-width: calc(33.78% - 1rem);
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 20px;
+
+    .statusContainer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .color {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.5rem;
+        &.yellow {
+          color: yellow;
+        }
+        &.green {
+          color: rgb(62, 173, 62);
+        }
+        &.blue {
+          color: var(--sky);
+        }
+      }
+    }
+
+    h2 {
+      color: white;
+    }
+
+    .description {
+      min-height: 100px;
+      max-height: 100px;
+    }
+
+    .urlTag {
+      margin-top: 1rem;
+      a {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background-color: var(--secondary);
+        border-radius: 20px;
+        width: auto;
+        .url {
+          margin-left: 1rem;
+        }
+      }
     }
   }
 }
