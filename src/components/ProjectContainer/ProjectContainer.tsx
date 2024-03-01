@@ -8,8 +8,7 @@ const projects = [
   {
     id: 1,
     name: "Teamsamble",
-    description:
-      "Best website ever lorem ssssssss ssssssss sssssssssssss ssssssssssss sssssssssssssssss sssssssssssssss sssssss ssssssss sssssssssss sssssssss sssssssssss sssss sssss",
+    description: "A place where freelancer with no experience can build projects together",
     status: "Building",
     url: "https://teamsamble.com/",
     shortUrl: "teamsamble.com",
@@ -20,15 +19,15 @@ const projects = [
     description: "One of my first projects. A simple e-commerce shopping web app with",
     status: "Shipped",
     url: "https://sensational-bombolone-c48a91.netlify.app/",
-    shortUrl: "sensational-bombolone.netlify.app",
+    shortUrl: "netlify.app",
   },
   {
     id: 3,
-    name: "E-commerce project",
+    name: "React project",
     description: "One of my first projects. A simple e-commerce shopping web app with",
     status: "Shipped",
     url: "https://boring-cori-50eeeb.netlify.app/",
-    shortUrl: "boring-cori.netlify.app",
+    shortUrl: "netlify.app",
   },
 ]
 
