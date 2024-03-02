@@ -3,6 +3,7 @@ import { Row } from "react-bootstrap"
 import pfp from "../public/assets/pfp.jpg"
 import Link from "next/link"
 import ProjectContainer from "@/src/components/ProjectContainer/ProjectContainer"
+import React from "react"
 
 export default function Home() {
   return (
