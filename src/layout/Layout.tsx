@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Head from "next/head"
 import favicon from "../../public/favicon.ico"
-import { useRouter } from "next/router"
 import Navbar from "../components/Navbar/Navbar"
 
 export const metadata: Metadata = {
@@ -10,7 +9,6 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const title = metadata.title || "Igor Nix"
-  const router = useRouter()
 
   return (
     <>
