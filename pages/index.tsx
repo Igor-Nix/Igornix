@@ -16,17 +16,16 @@ export default function Home() {
         <h1>Next.js & React developer</h1>
       </Row>
       <Row className="bio">
-        <p>
+        <p className="text">
           Hey, I&apos;m Igor. I specialize in building web applications and websites within the JavaScript ecosystem.
         </p>
       </Row>
       <Row className="bio">
         <p className="text">
-          I&apos;m currently working at{" "}
+          I&apos;m currently working at
           <Link style={{ margin: "0 5px" }} href="https://kama.sport/">
-            {" "}
-            Kama{" "}
-          </Link>{" "}
+            Kama
+          </Link>
           while building projects on the side.
         </p>
       </Row>

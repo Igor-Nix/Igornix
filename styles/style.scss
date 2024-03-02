@@ -1,3 +1,15 @@
+body {
+  padding: 0 8rem;
+  @media screen and (max-width: 992px) {
+    padding: 0 5rem !important;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 1rem !important;
+  }
+}
+body:has(.aboutPage, .contactPage) {
+  padding: 0 40rem;
+}
 .navbar {
   background-color: var(--primary);
   border-radius: 20px;
@@ -57,10 +69,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    p {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .text {
+      text-align: center;
     }
   }
 }
@@ -76,8 +86,26 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 5rem;
+
+  @media screen and (max-width: 992px) {
+    .projectCard {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    .urlTag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h2 {
+      text-align: center;
+    }
+  }
+
   .projectCard {
-    max-width: calc(33.78% - 1rem);
+    max-width: calc(33.45% - 1rem);
     background-color: var(--primary);
     padding: 1rem;
     border-radius: 20px;
@@ -127,5 +155,28 @@
         }
       }
     }
+  }
+}
+
+.aboutPage,
+.contactPage {
+  h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  span {
+    color: white;
+  }
+}
+
+.contactPage {
+  .socialLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

@@ -42,7 +42,7 @@ function ProjectContainer() {
     <Row className="projectContainer">
       {projects.map((p) => {
         return (
-          <Col key={p.id} md={4} className="projectCard">
+          <Col key={p.id} xs={12} md={12} lg={4} className="projectCard">
             <div className="statusContainer">
               <div className={`color ${statusColors[p.status as keyof typeof statusColors] || ""}`}>
                 <CircleIcon />
