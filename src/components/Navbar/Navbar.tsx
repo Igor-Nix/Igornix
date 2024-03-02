@@ -35,19 +35,19 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className={`nav${page === "home" ? " active" : ""}`} onClick={(e) => handleClick(e, "/")}>
-        <Tooltip title="Home">
+        <Tooltip overlayClassName="tooltip" title="Home">
           <HomeIcon />
         </Tooltip>
       </div>
 
       <div className={`nav${page === "about" ? " active" : ""}`} onClick={(e) => handleClick(e, "/about")}>
-        <Tooltip title="About Me">
+        <Tooltip overlayClassName="tooltip" title="About Me">
           <PersonIcon />
         </Tooltip>
       </div>
 
       <div className={`nav${page === "contact" ? " active" : ""}`} onClick={(e) => handleClick(e, "/contact")}>
-        <Tooltip title="Contact">
+        <Tooltip overlayClassName="tooltip" title="Contact">
           <AlternateEmailIcon />
         </Tooltip>
       </div>
