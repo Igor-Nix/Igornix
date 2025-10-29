@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const title = metadata.title || "Igor Nix"
+  const title = metadata.title || "Igor Nix W"
 
   return (
     <>
